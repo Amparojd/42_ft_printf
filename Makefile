@@ -2,7 +2,7 @@ NAME = libftprintf.a
 GCC = gcc
 CFLAGS = -Wall -Wextra -Werror
 OBJ_DIR	=./obj/
-SRCS = \
+SRCS = ft_words.c \
 OBJ_FILES = $(SRCS:.c=.o)
 OBJS	= $(addprefix $(OBJ_DIR), $(OBJ_FILES))
 
