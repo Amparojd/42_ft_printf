@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 16:18:05 by prossi            #+#    #+#             */
-/*   Updated: 2023/10/18 18:14:35 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/18 19:11:47 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	ft_pthexa(unsigned long long num, char *base, int *length)
 		ft_putchar_length(base[num], length);
 }
 
-int main(void)
+/* int main(void)
 {
 	int n = -44534376;
 	unsigned int num = 44564;
@@ -71,4 +71,4 @@ int main(void)
 	printf("\n\n");
 	ft_unsigned_int(num, i);
 	printf("\n" "Length: %d\n", length);
-}
+} */

@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 16:18:05 by prossi            #+#    #+#             */
-/*   Updated: 2023/10/17 17:51:15 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/18 19:11:36 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ft_putstr(char *s, int *length)
 	}
 }
 
-int main(void)
+/* int main(void)
 {
 	char *a ="hola";
 	//int *i = malloc(sizeof(int));
@@ -54,4 +54,4 @@ int main(void)
 	ft_putstr(a, i);
 	printf("\n" "Length: %d\n", length);
 	return 0;
-}
+} */
