@@ -1,28 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/21 15:46:25 by amdemuyn          #+#    #+#             */
-/*   Updated: 2023/10/18 18:16:14 by ampjimen         ###   ########.fr       */
+/*   Created: 2022/06/15 16:18:05 by prossi            #+#    #+#             */
+/*   Updated: 2023/10/18 18:17:46 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	FT_PRINTF_H
-# define	FT_PRINTF_H
-
-# include <unistd.h>
-# include <stdarg.h>
-# include <stddef.h>
-# include <stdlib.h> 
-# include <stdio.h>
-
-void	ft_putchar_length(char c, int *length);
-void	ft_putstr(char *s, int *length);
-void	ft_ptnumber(int n, int *length);
-void	ft_pthexa(unsigned long long num, char *base, int *length);
-
-#endif
+#include "ft_printf.h"
 
