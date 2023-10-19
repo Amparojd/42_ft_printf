@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:16:11 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/19 17:51:30 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/19 20:47:01 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,15 @@
 
 void	ft_putchar_length(char c, int *length)
 {
-	write(1, &c, 1);
-	(*length)++;
+	if (write(1, &c, 1) == -1)
+		*length = -1;
+	else
+		*length = *length +1;
 }
 
 void	ft_putstr(char *s, int *length)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	if (!s)
@@ -32,15 +34,18 @@ void	ft_putstr(char *s, int *length)
 	while (s[i] != '\0')
 	{
 		ft_putchar_length(s[i], length);
+		if (*length == -1)
+			return ;
 		i++;
 	}
 }
 
-/* int main(void)
+int main(void)
 {
-	char *a ="hola";
+	char a ="h";
 	//int *i = malloc(sizeof(int));
 	int length = 0;
+	
 	int *i = &length;
 
 	// if (i == NULL)
@@ -48,8 +53,8 @@ void	ft_putstr(char *s, int *length)
 		//printf("Error, no se pudo asignar memoria");
 		//return (0);
 	//} 
-	ft_putstr(a, i);
+	ft_putchar_length(a, i);
+	printf("\n");
 	printf("\n" "Length: %d\n", length);
 	return 0;
 }
-*/

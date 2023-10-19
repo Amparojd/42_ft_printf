@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:15:58 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/19 17:49:20 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/19 19:15:39 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,9 @@ void	ft_check_type(va_list args, const char str, int *length)
 	else if (str == 'p')
 	{
 		ft_putstr("0x", length);
-		ft_pthexa(va_arg(args, unsigned long long), "0123456789abcdef", length);
+		if (*length != -1)
+			ft_pthexa(va_arg(args, unsigned long long),
+				"0123456789abcdef", length);
 	}
 }
 
