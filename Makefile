@@ -14,9 +14,6 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-bonus: $(OBJS_BONUS)
-	ar rcs $(NAME) $(OBJS_BONUS)
-
 $(OBJ_DIR)%.o: $(SRCS_DIR)%.c
 	@mkdir -p $(@D)
 	@$(GCC) $(CFLAGS) -c $< -o $@

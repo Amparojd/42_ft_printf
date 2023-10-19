@@ -5,15 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/15 16:18:05 by prossi            #+#    #+#             */
-/*   Updated: 2023/10/18 19:11:36 by ampjimen         ###   ########.fr       */
+/*   Created: 2023/10/19 16:16:11 by ampjimen          #+#    #+#             */
+/*   Updated: 2023/10/19 17:51:30 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
 
 void	ft_putchar_length(char c, int *length)
 {
@@ -46,12 +43,13 @@ void	ft_putstr(char *s, int *length)
 	int length = 0;
 	int *i = &length;
 
-	/* if (i == NULL)
-	{
-		printf("Error, no se pudo asignar memoria");
-		return (0);
-	} */
+	// if (i == NULL)
+	//{
+		//printf("Error, no se pudo asignar memoria");
+		//return (0);
+	//} 
 	ft_putstr(a, i);
 	printf("\n" "Length: %d\n", length);
 	return 0;
-} */
+}
+*/
