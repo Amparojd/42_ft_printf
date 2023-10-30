@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:15:58 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/30 18:25:14 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/30 18:32:53 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,6 @@ int	ft_printf(const char *str, ...)
 
 /* int main(void)
 {
-	ft_printf("%c\n%s\n%d\n%u\n%x\n%X\n%p\n", 'h', "hola", -123, 123, 0xde, 0xde, 22);
-	printf("%c\n%s\n%d\n%u\n%x\n%X\n%p\n", 'h', "hola", -123, 123, 0xde, 0xde, 22);
+	ft_printf("%c\n%s\n%d\n%u\n%x\n%X\n", 'h', "hola", -123, 123, 0xde, 0xde);
+	printf("%c\n%s\n%d\n%u\n%x\n%X\n", 'h', "hola", -123, 123, 0xde, 0xde);
 } */
