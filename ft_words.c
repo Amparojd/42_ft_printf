@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:16:11 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/19 20:47:01 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/30 18:25:59 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,7 @@ void	ft_putstr(char *s, int *length)
 	i = 0;
 	if (!s)
 	{
-		write(1, "(null)", 6);
-		(*length) += 6;
+		ft_putstr("(null)", length);
 		return ;
 	}
 	while (s[i] != '\0')
@@ -40,9 +39,9 @@ void	ft_putstr(char *s, int *length)
 	}
 }
 
-int main(void)
+/*int main(void)
 {
-	char a ="h";
+	char a = 'h';
 	//int *i = malloc(sizeof(int));
 	int length = 0;
 	
@@ -53,8 +52,15 @@ int main(void)
 		//printf("Error, no se pudo asignar memoria");
 		//return (0);
 	//} 
+	
+	char *str = "hola";
+	int lengths = 0;
+	
+	int *m = &lengths;
+	
 	ft_putchar_length(a, i);
-	printf("\n");
 	printf("\n" "Length: %d\n", length);
+	ft_putstr(str, m);
+	printf("\n" "El length de str es: %d\n", lengths);
 	return 0;
-}
+}*/

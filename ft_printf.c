@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:15:58 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/19 19:15:39 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/30 18:25:14 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ int	ft_printf(const char *str, ...)
 		else
 			ft_putchar_length(str[i], &length);
 		i++;
+		if (length < 0)
+			return (-1);
 	}
 	va_end(args);
 	return (length);
@@ -65,8 +67,6 @@ int	ft_printf(const char *str, ...)
 
 /* int main(void)
 {
-	int length = 0;
-	int *n = &length;
-	ft_printf("%c\n%s\n%d", "h", "hola", 234562);
-	printf("La longitud total es: %n", length);
+	ft_printf("%c\n%s\n%d\n%u\n%x\n%X\n%p\n", 'h', "hola", -123, 123, 0xde, 0xde, 22);
+	printf("%c\n%s\n%d\n%u\n%x\n%X\n%p\n", 'h', "hola", -123, 123, 0xde, 0xde, 22);
 } */

@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:16:17 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/19 19:34:45 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/10/30 16:50:16 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,10 +71,18 @@ void	ft_pthexa(unsigned long long num, char *base, int *length)
 	int *i = &length;
 	unsigned int num = 4;
 	int lengthu = 0;
+	unsigned long long h = 222;
+	int lengthh = 0;
+	int *he = &lengthh;
+	char base[] = "0123456789ABCDEF";
 	int *iu = &lengthu;
 	ft_ptnumber(n, i);
 	printf("\n" "Length: %d\n", length);
 	printf("\n\n");
 	ft_unsigned_int(num, iu);
 	printf("\n" "Length: %d\n", lengthu);
-} */
+	printf("\n\n");
+	ft_pthexa(h, base, he);
+	printf("\n" "Length: %d\n", lengthh);
+	
+}  */
