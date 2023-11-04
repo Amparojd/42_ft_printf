@@ -6,18 +6,18 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:16:05 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/30 18:32:26 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/11/04 11:15:58 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include	<unistd.h>
-# include	<stdarg.h>
-# include	<stddef.h>
-# include	<stdlib.h> 
-# include	<stdio.h>
+# include <unistd.h>
+# include <stdarg.h>
+# include <stddef.h>
+# include <stdlib.h> 
+# include <stdio.h>
 
 void	ft_putchar_length(char c, int *length);
 void	ft_putstr(char *s, int *length);

@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:16:17 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/30 16:50:16 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/11/03 19:08:07 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,4 @@ void	ft_pthexa(unsigned long long num, char *base, int *length)
 	printf("\n\n");
 	ft_pthexa(h, base, he);
 	printf("\n" "Length: %d\n", lengthh);
-	
-}  */
+} */

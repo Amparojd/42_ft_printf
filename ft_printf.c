@@ -6,7 +6,7 @@
 /*   By: ampjimen <ampjimen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:15:58 by ampjimen          #+#    #+#             */
-/*   Updated: 2023/10/30 18:32:53 by ampjimen         ###   ########.fr       */
+/*   Updated: 2023/11/04 11:16:22 by ampjimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ void	ft_check_type(va_list args, const char str, int *length)
 		ft_ptnumber(va_arg(args, int), length);
 	else if (str == 'u')
 		ft_unsigned_int(va_arg(args, unsigned int), length);
-	else if (str == 's')
-		ft_putstr(va_arg(args, char *), length);
 	else if (str == 'x')
 		ft_pthexa(va_arg(args, unsigned int), "0123456789abcdef", length);
 	else if (str == 'X')
@@ -59,14 +57,8 @@ int	ft_printf(const char *str, ...)
 			ft_putchar_length(str[i], &length);
 		i++;
 		if (length < 0)
-			return (-1);
+			return (va_end(args), -1);
 	}
 	va_end(args);
 	return (length);
 }
-
-/* int main(void)
-{
-	ft_printf("%c\n%s\n%d\n%u\n%x\n%X\n", 'h', "hola", -123, 123, 0xde, 0xde);
-	printf("%c\n%s\n%d\n%u\n%x\n%X\n", 'h', "hola", -123, 123, 0xde, 0xde);
-} */
